@@ -18,15 +18,15 @@ I analyzed a dataset of hospital admissions to understand and predict respirator
 1. Built an ML Model
     - Goal: Predict monthly admissions per hospital with high accuracy.
     - Approach:
-        - Aggregated by year, month, hospital for broader patterns.
+        - Aggregated by year, month, and hospital for broader patterns.
         - Features: month, is_riyadh, hospital_name, temperature, humidity, value,  lag1_admissions (prior month’s count).
         - Model: Random Forest Regressor (n_estimators=100).
-        - Result: MAE 46.85, R² 0.861—predictions off by ~47 admissions, explaining 86% of variance.
+        - Result: MAE 46.85, R² 0.861—predictions off by ~47 admissions, explaining 86% of the variance.
 
 1. Evaluated Alternatives
-    -Tuned Random Forest: MAE 44.89, R² 0.855 (max_depth=10).
-    -XGBoost: MAE 46.90, R² 0.843.
-    -Asthma-Only: MAE 24.70, R² 0.833.
+    - Tuned Random Forest: MAE 44.89, R² 0.855 (max_depth=10).
+    - XGBoost: MAE 46.90, R² 0.843.
+    - Asthma-Only: MAE 24.70, R² 0.833.
 
 ### Final Outcome
 
